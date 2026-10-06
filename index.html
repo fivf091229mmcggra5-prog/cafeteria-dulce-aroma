@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dulce Aroma - El mejor café de Villa Victoria</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dulce Aroma</title>
 <style>
-body{margin:0;font-family:Arial, sans-serif;background:#fdf1e0;color:#3a1f0e;line-height:1.5}
-header{background:#3a1f0e;color:#ffeecb;padding:12px 25px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}
-.hero{background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1300');background-size:cover;background-position:center;color:#ffeecb;text-align:center;padding:90px 20px}
-.btn{background:#ffeecb;color:#3a1f0e;padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;margin:5px}
-.section{max-width:1150px;margin:auto;padding:35px 20px}
-.section h1{text-align:center;font-size:42px;margin-bottom:5px}
-.subtitle{text-align:center;color:#7a5a3e;margin-bottom:30px}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
-.col h3{background:#3a1f0e;color:#ffeecb;text-align:center;padding:12px;border-radius:25px;font-size:20px}
-.item{display:flex;gap:12px;margin:14px 0;align-items:center;background:white;padding:10px 12px;border-radius:14px;box-shadow:0 2px 8px #0001}
-.item img{width:65px;height:65px;border-radius:12px;object-fit:cover}
-.price{margin-left:auto;font-weight:bold;font-size:18px;color:#3a1f0e}
-.about{background:white;padding:30px;border-radius:20px;margin:30px auto;max-width:1000px;box-shadow:0 5px 20px #0001;text-align:center}
-footer{background:#3a1f0e;color:#ffeecb;padding:30px;text-align:center}
+body{margin:0;font-family:Arial;background:#fdf1e0;color:#3d1f0f;scroll-behavior:smooth}
+header{background:#3d1f0f;color:#fff8e1;padding:15px;text-align:center}
+.hero{background:#5d3311;color:#fff8e1;padding:60px 20px;text-align:center}
+.btn{background:#fff8e1;color:#3d1f0f;padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:15px}
+.menu{max-width:900px;margin:auto;padding:30px 20px}
+.card{background:white;padding:15px;border-radius:15px;margin:12px 0;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 5px #0002}
+footer{background:#3d1f0f;color:#fff8e1;text-align:center;padding:25px;margin-top:30px}
 </style>
 </head>
 <body>
-<header><b>☕ Dulce Aroma</b><div>Inicio | Menú | Nosotros | Contacto</div></header>
+<header><h2>☕ Dulce Aroma - Villa Victoria</h2></header>
 
 <div class="hero">
-<h1 style="font-size:50px;margin:0">El mejor café de Villa Victoria</h1>
-<p style="font-size:18px;max-width:700px;margin:15px auto">Café artesanal, preparado con amor y granos 100% arábica de Chiapas. Tostado local todos los días. Un lugar cálido para disfrutar cada momento.</p>
-<br><a class="btn" href="#menu">☕ Ver Menú Completo</a> <a class="btn" style="background:transparent;border:2px solid #ffeecb;color:#ffeecb" href="#nosotros">Sobre Nosotros</a>
-<p style="margin-top:25px">☕ 100% Arábica | 🫘 Tostado Local | 🕐 Abierto 8:00 - 20:00</p>
+<h1 style="font-size:42px;margin:0">El mejor café de Villa Victoria</h1>
+<p>Café artesanal, 100% arábica, tostado local</p>
+<a class="btn" href="#menu">☕ Ver Menú</a>
 </div>
 
-<div class="section" id="menu">
-<h1>Nuestro Menú Completo</h1>
-<p class="subtitle">Descubre nuestra selección de
+<!-- AQUI ES A DONDE LLEVA EL BOTON -->
+<div class="menu" id="menu">
+<h1 style="text-align:center">Nuestro Menú</h1>
+<p style="text-align:center">Da clic en Ver Menú y te trae hasta aquí 👇</p>
+
+<h3>☕ Cafés Calientes</h3>
+<div class="card"><span><b>Espresso</b> - Intenso y tradicional</span><b>$45</b></div>
+<div class="card"><span><b>Cappuccino</b> - Espuma cremosa</span><b>$55</b></div>
+<div class="card"><span><b>Latte</b> - Leche vaporizada</span><b>$55</b></div>
+<div class="card"><span><b>Mocha</b> - Chocolate y café</span><b>$58</b></div>
+<div class="card"><span><b>Americano</b> - Café negro filtrado</span><b>$35</b></div>
+<div class="card"><span><b>Café de Olla</b> - Con piloncillo</span><b>$48</b></div>
+
+<h3>🧊 Cafés Fríos</h3>
+<div class="card"><span><b>Cold Brew</b> - 12h extracción</span><b>$60</b></div>
+<div class="card"><span><b>Iced Latte</b> - Con leche fría</span><b>$58</b></div>
+<div class="card"><span><b>Frappé Caramelo</b> - Dulce y cremoso</span><b>$65</b></div>
+<div class="card"><span><b>Iced Mocha</b> - Chocolate frío</span><b>$65</b></div>
+<div class="card"><span><b>Frappe Oreo</b> - Con oreo</span><b>$70</b></div>
+
+<h3>🍰 Postres</h3>
+<div class="card"><span><b>Croissant de Mantequilla</b></span><b>$40</b></div>
+<div class="card"><span><b>Brownie de Chocolate</b></span><b>$45</b></div>
+<div class="card"><span><b>Cheesecake de Fresa</b></span><b>$60</b></div>
+<div class="card"><span><b>Galleta de Avena</b></span><b>$35</b></div>
+<div class="card"><span><b>Pastel de Zanahoria</b></span><b>$55</b></div>
+</div>
+
+<footer>
+<b>Dulce Aroma</b><br>Av. Hidalgo 12, Villa Victoria<br>Abierto 8:00 - 20:00<br>© 2024
+</footer>
+</body>
+</html>
