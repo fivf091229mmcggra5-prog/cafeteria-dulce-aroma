@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dulce Aroma</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dulce Aroma - El mejor café de Villa Victoria</title>
 <style>
-body{margin:0;font-family:Arial;background:#fdf6ee;text-align:center}
-header{background:#2b1a0e;color:white;padding:50px}
-.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:30px}
-.card{background:white;width:250px;border-radius:20px;padding-bottom:15px;box-shadow:0 5px 15px #0002}
-.card img{width:100%;height:160px;object-fit:cover;border-radius:20px 20px 0 0}
+body{margin:0;font-family:Arial, sans-serif;background:#fdf1e0;color:#3a1f0e;line-height:1.5}
+header{background:#3a1f0e;color:#ffeecb;padding:12px 25px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}
+.hero{background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1300');background-size:cover;background-position:center;color:#ffeecb;text-align:center;padding:90px 20px}
+.btn{background:#ffeecb;color:#3a1f0e;padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;margin:5px}
+.section{max-width:1150px;margin:auto;padding:35px 20px}
+.section h1{text-align:center;font-size:42px;margin-bottom:5px}
+.subtitle{text-align:center;color:#7a5a3e;margin-bottom:30px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
+.col h3{background:#3a1f0e;color:#ffeecb;text-align:center;padding:12px;border-radius:25px;font-size:20px}
+.item{display:flex;gap:12px;margin:14px 0;align-items:center;background:white;padding:10px 12px;border-radius:14px;box-shadow:0 2px 8px #0001}
+.item img{width:65px;height:65px;border-radius:12px;object-fit:cover}
+.price{margin-left:auto;font-weight:bold;font-size:18px;color:#3a1f0e}
+.about{background:white;padding:30px;border-radius:20px;margin:30px auto;max-width:1000px;box-shadow:0 5px 20px #0001;text-align:center}
+footer{background:#3a1f0e;color:#ffeecb;padding:30px;text-align:center}
 </style>
 </head>
 <body>
-<header><h1>☕ Dulce Aroma</h1><p>El mejor café de Villa Victoria</p></header>
-<h2>Menú</h2>
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400"><h3>Americano $35</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400"><h3>Capuccino $55</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400"><h3>Pastel $65</h3></div>
+<header><b>☕ Dulce Aroma</b><div>Inicio | Menú | Nosotros | Contacto</div></header>
+
+<div class="hero">
+<h1 style="font-size:50px;margin:0">El mejor café de Villa Victoria</h1>
+<p style="font-size:18px;max-width:700px;margin:15px auto">Café artesanal, preparado con amor y granos 100% arábica de Chiapas. Tostado local todos los días. Un lugar cálido para disfrutar cada momento.</p>
+<br><a class="btn" href="#menu">☕ Ver Menú Completo</a> <a class="btn" style="background:transparent;border:2px solid #ffeecb;color:#ffeecb" href="#nosotros">Sobre Nosotros</a>
+<p style="margin-top:25px">☕ 100% Arábica | 🫘 Tostado Local | 🕐 Abierto 8:00 - 20:00</p>
 </div>
-</body>
-</html>
+
+<div class="section" id="menu">
+<h1>Nuestro Menú Completo</h1>
+<p class="subtitle">Descubre nuestra selección de
